@@ -8,19 +8,19 @@ body {
 	background-color: #48acf0;
 }
 
-body.dark {
+.dark {
 	color: #ececec;
 }
 
-body.light {
+.light {
 	color: #333;
 }
 
-body.light ::selection {
+.light ::selection {
 	background: rgba(0, 0, 0, 0.2);
 }
 
-body.dark ::selection {
+.dark ::selection {
 	background: rgba(255, 255, 255, 0.2);
 }
 
@@ -96,4 +96,22 @@ input[type=range]::-ms-track {
 
 h1 {
 	font-weight: normal;
+}
+
+#palette {
+	height: 100%;
+	width: 300px;
+	overflow-y: scroll;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+.paletteColor {
+	width: 300px;
+	height: 100px;
 }
