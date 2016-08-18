@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Color Picker</title>
+		
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+	</head>
+	
+	<body id="body" class="light">
+		<h5><a href="http://cin.ufpe.br/~asq">ASQ</a></h5>
+	
+		<div id="universo">
+			<div>
+				<input type=text id="red-label" value="72" oninput="setColor('red', value)">
+				<input type=range id="red" min=0 value=72 max=255 oninput="updateColor()">
+			</div>
+			
+			<div>
+				<input type=text id="green-label" value="172" oninput="setColor('green', value)">
+				<input type=range id="green" min=0 value=172 max=255 oninput="updateColor()">
+			</div>
+			
+			<div>
+				<input type=text id="blue-label" value="240" oninput="setColor('blue', value)">
+				<input type=range id="blue" min=0 value=240 max=255 oninput="updateColor()">
+			</div>
+			
+			<h1 id="hex" onclick="select(this)">#48ACF0</h1>
+		</div>
+	</body>
+	
+	<script src="static/script.js"></script>
+</html>
