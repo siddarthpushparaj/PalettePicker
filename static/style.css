@@ -115,3 +115,7 @@ h1 {
 	width: 300px;
 	height: 100px;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
